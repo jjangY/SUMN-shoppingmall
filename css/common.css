@@ -1,0 +1,74 @@
+/* 변수 */
+:root{
+    /* 디바이스 별 글씨 크기 기준 */
+    --fs-pc:16px;
+    --fs-pad:14px;
+    --fs-mo:12px;
+
+    /* 행간 */
+    --lh1:1.2;
+    --lh2:1.45;
+
+    /* 태그 글씨 크기 */
+    --fs-h4:1.25rem;
+    --fs-h3:1.5625rem;
+    --fs-h2:1.9531rem;
+    --fs-h1:2.4414rem;
+    --fs-body1:1rem;
+    --fs-body2:0.85rem;
+    --fs-detail:0.7225rem;
+
+    /* 글씨 두께 */
+    --fw1:400;
+    --fw2:700;
+
+    /* 여백 */
+    --space-3x-large:6rem;
+    --space-2x-large:3rem;
+    --space-x-large:2rem;
+    --space-nomal:1rem;
+    --space-x-small:0.5rem;
+    --space-2x-small:0.25rem;
+    
+    /* 색상 */
+    --dark-0:#F7F4ED;
+    --dark-100:#F5ECDC;
+    --dark-200:#F0E3C9;
+    --dark-300:#E9D9B7;
+    --dark-400:#DFCCA6;
+    --dark-500:#D1BD95;
+    --dark-600:#BEAB84;
+    --dark-700:#A79571;
+    --dark-800:#8C7D5D;
+    --dark-800:#70634A;
+
+    /* 그레이 컬러 */
+    --gray-0:#FFFFFF;
+    --gray-100:#FBFBFB;
+    --gray-200:#F3F3F3;
+    --gray-300:#E7E7E7;
+    --gray-400:#D6D6D6;
+    --gray-500:#BEBEBE;
+    --gray-600:#9E9E9E;
+    --gray-700:#777777;
+    --gray-800:#494949;
+    --gray-900:#1A1A1A;
+
+    /* 서브컬러 */
+    --sub-color:#99AD7A;
+}
+
+h1{font-size: var(--fs-h1);}
+h1{font-size: var(--fs-h2);}
+h1{font-size: var(--fs-h3);}
+h1{font-size: var(--fs-h4);}
+
+html{
+    font-size:var(--fs-pc);
+    font-family: 'Pretendard',sans-serif;
+    font-weight: var(--fw1);
+    color: var(--gray-900);
+}
+.common-frame{
+    padding: 0 var(--space-2x-large);
+}
