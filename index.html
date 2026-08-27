@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="./js/header.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+    <!-- 데스크탑용 헤더 -->
     <header class="pc">
         <div class="header-top">
             <div class="common-frame">
@@ -31,19 +35,19 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./img/icn-search-membership.svg" alt="회원가입">
+                                <img src="./img/icn-search-membership.svg" alt="회원가입하기">
                                 <span>회원가입</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./img/icn-search.svg" alt="검색">
+                                <img src="./img/icn-search.svg" alt="검색하기">
                                 <span>검색</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./img/icn-cart.svg" alt="장바구니">
+                                <img src="./img/icn-cart.svg" alt="장바구니보기">
                                 <span>장바구니</span>
                             </a>
                         </li>
@@ -342,6 +346,7 @@
             </div>
         </div>
     </header>
+    <!-- 패드 / 모바일용 헤더 -->
     <div class="smart-header">
         <div class="common-frame">
             <div class="logo">
@@ -356,7 +361,7 @@
             </div>
         </div>
     </div>
-
+    <!--패드 /모바일용 전체 메가 메뉴-->
     <div class="smart-overlay-menu">
         <div class="smart-overlay-menu-1">
             <div class="common-frame">
@@ -383,19 +388,19 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./img/icn-search-membership.svg" alt="회원가입">
+                            <img src="./img/icn-search-membership.svg" alt="회원가입하기">
                             <span>회원가입</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./img/icn-search.svg" alt="검색">
+                            <img src="./img/icn-search.svg" alt="검색하기">
                             <span>검색</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./img/icn-cart.svg" alt="장바구니">
+                            <img src="./img/icn-cart.svg" alt="장바구니보기">
                             <span>장바구니</span>
                         </a>
                     </li>
@@ -413,7 +418,7 @@
             <div class="common-frame">
                 <ul class="gnb-smart">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">NEW</a></li>
+                    <li class="on"><a href="#">NEW</a></li>
                     <li><a href="#">SHOP</a></li>
                     <li><a href="#">COLLECTION</a></li>
                     <li><a href="#">EVENT</a></li>
@@ -423,7 +428,7 @@
             </div>
         </div>
         <div class="smart-overlay-menu-bottom">
-            <div class="gnb2depth-smart">
+            <div class="gnb2depth-smart on">
                 <div class="common-frame">
                     <section>
                         <h4><a href="#">위클리</a></h4>
@@ -682,8 +687,55 @@
                     </section>
                 </div>
             </div>
+
         </div>
     </div>
+    <main>
+        <!-- 히어로 배너 슬라이드 -->
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/2pc.jpg" alt="당신의 일상이 머무는 공간 SUMN">
+                    <img class="pad" src="./img/2pad.jpg" alt="당신의 일상이 머무는 공간 SUMN">
+                    <img class="mo" src="./img/2mo.jpg" alt="당신의 일상이 머무는 공간 SUMN">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/1pc.jpg" alt="최대 30% 할인 상품">
+                    <img class="pad" src="./img/1pad.jpg" alt="최대 30% 할인 상품">
+                    <img class="mo" src="./img/1mo.jpg" alt="최대 30% 할인 상품">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/3pc.jpg" alt="2026 새로운 컬렉션">
+                    <img class="pad" src="./img/3pad.jpg" alt="2026 새로운 컬렉션">
+                    <img class="mo" src="./img/3mo.jpg" alt="2026 새로운 컬렉션">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            const station = new Swiper('.hero-slider', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                speed: 1000
+            });
+        </script>
+        <div class="banner-line">
+            <div class="common-frame">
+                <span>NOTICE</span>
+                <h4>SUMN의 새로운 소식을 확인해보세요.</h4>
+                <p>새로운 Collection과 Event, 브랜드 관련 소식 만나보기</p>
+                <a href="#" class="btn-style">VIEW NOTICE <img src="./img/formkit-arrowright.svg" alt="공지사항 바로가기"></a>
+            </div>
+        </div>
+    </main>
+
 </body>
 
 </html>

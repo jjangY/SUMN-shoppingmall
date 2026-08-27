@@ -1,5 +1,9 @@
 header{
-
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
 }
 .smart-overlay-menu{display: none;}
 .header-top{
@@ -7,6 +11,7 @@ header{
 .header-top>.common-frame{
         display: flex;
         justify-content: space-between;
+        background-color: #fff;
 }
 .user-menu{
     display: flex;
@@ -89,7 +94,13 @@ header{
     .pc{display: none;}
     .smart-header{
         display: block;
+        height: 5rem;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
     }
+    .loco img{height: 5rem}
     .smart-header .common-frame{
         display: flex;
         align-items: center;
@@ -114,6 +125,7 @@ header{
         flex-direction: column;
         transform: translateX(100%);
         transition: all 0.6s ease 0s
+        z-index: 110;
     }
     .smart-overlay-menu.on{
         transform: translateX(0%);
@@ -132,7 +144,6 @@ header{
         line-height: 0;
     }
     .smart-overlay-menu-2 .common-frame{
-        border:1px solid red;
         height:4.285rem;
         display: flex;
         justify-content: flex-end;
@@ -187,7 +198,6 @@ header{
         flex-direction: column;
         gap:1rem;
     }
-}
 @media (max-width:768px){
     .gnb2depth-smart .common-frame{
         grid-template-columns: repeat(2,1fr);

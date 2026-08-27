@@ -40,7 +40,7 @@
     --dark-600:#BEAB84;
     --dark-700:#A79571;
     --dark-800:#8C7D5D;
-    --dark-800:#70634A;
+    --dark-900:#70634A;
 
     /* 그레이 컬러 */
     --gray-0:#FFFFFF;
@@ -71,17 +71,31 @@ html{
 }
 .common-frame{
     padding: 0 var(--space-2x-large);
+
 }
 
+.pc{display: block;}
+.pad{display: none;}
+.mo{display: none;}
+
 @media (max-width:1024px){
+    .pc{display: none;}
+    .pad{display: block;}
+    .mo{display: none;}
     html{
         font-size:var(--fs-pad);
     }
     .common-frame{
         padding: 0 var(--space-x-large);
     }
+    .main{
+        margin-top:5rem;
+    }
 }
 @media (max-width:768px){
+    .pc{display: none;}
+    .pad{display: none;}
+    .mo{display: block;}
     html{
         font-size:var(--fs-mo);
     }
