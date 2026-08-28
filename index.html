@@ -695,14 +695,14 @@
         <div class="swiper hero-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class="pc" src="./img/2pc.jpg" alt="당신의 일상이 머무는 공간 SUMN">
-                    <img class="pad" src="./img/2pad.jpg" alt="당신의 일상이 머무는 공간 SUMN">
-                    <img class="mo" src="./img/2mo.jpg" alt="당신의 일상이 머무는 공간 SUMN">
+                    <img class="pc" src="./img/1pc.jpg" alt="당신의 일상이 머무는 공간 SUMN">
+                    <img class="pad" src="./img/1pad.jpg" alt="당신의 일상이 머무는 공간 SUMN">
+                    <img class="mo" src="./img/1mo.jpg" alt="당신의 일상이 머무는 공간 SUMN">
                 </div>
                 <div class="swiper-slide">
-                    <img class="pc" src="./img/1pc.jpg" alt="최대 30% 할인 상품">
-                    <img class="pad" src="./img/1pad.jpg" alt="최대 30% 할인 상품">
-                    <img class="mo" src="./img/1mo.jpg" alt="최대 30% 할인 상품">
+                    <img class="pc" src="./img/2pc.jpg" alt="최대 30% 할인 상품">
+                    <img class="pad" src="./img/2pad.jpg" alt="최대 30% 할인 상품">
+                    <img class="mo" src="./img/2mo.jpg" alt="최대 30% 할인 상품">
                 </div>
                 <div class="swiper-slide">
                     <img class="pc" src="./img/3pc.jpg" alt="2026 새로운 컬렉션">
@@ -726,6 +726,7 @@
                 speed: 1000
             });
         </script>
+
         <div class="banner-line">
             <div class="common-frame">
                 <span>NOTICE</span>
@@ -734,8 +735,232 @@
                 <a href="#" class="btn-style">VIEW NOTICE <img src="./img/formkit-arrowright.svg" alt="공지사항 바로가기"></a>
             </div>
         </div>
-    </main>
+        <section class="con1">
+            <div class="common-frame">
+                <div class="title">
+                    <h1>Live in SUMN</h1>
+                    <spann></spann>
+                    <p>공간의 쓰임과 아름다움을 생각한 SUMN의 컬렉션을 만나보세요.</p>
+                </div>
+                <div class="swiper cardlist-wrap">
+                    <ul class="cardlist swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">LIVING ROOM</div>
+                                <img src="./img/con1-1.jpg" alt="living room">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">DINING ROOM</div>
+                                <img src="./img/con1-2.jpg" alt="dining room">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">KITCHEN</div>
+                                <img src="./img/con1-3.jpg" alt="kitchen">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">BEDROOM</div>
+                                <img src="./img/con1-4.jpg" alt="bed room">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    const cardlist = new Swiper('.cardlist-wrap', {
+                        breakpoints: {
+                            100: {
+                                slidesPerView: 1.2,
+                                spaceBetween: 12,
+                            },
 
+                            340: {
+                                slidesPerView: 2.2,
+                                spaceBetween: 12,
+                            }
+
+                            768: {
+                                slidesPerView: 3.2,
+                                spaceBetween: 14,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 16,
+                            },
+                        },
+                        autoplay: 3000
+                    });
+                </script>
+            </div>
+        </section>
+        <section class="con2">
+            <div class="common-frame">
+                <div class="title">
+                    <h1>집에 머무는 이유, SUMN</h1>
+                </div>
+                <div class="swiper  review-story-wrap">
+                    <ul class="reivew-story swiper-wrapper">
+
+                    </ul>
+                </div>
+                
+                <ul class="reivew-story">
+                    <li>
+                        <figure>
+                            <img src="" alt="(이름/나이)">
+                        </figure>
+                        <div class="story-txt">
+                            <div class="stars">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                            </div>
+                            <h4>김서연<i class="mdt">32세</i><i class="mdt"></i>서울</h4>
+                        </div>
+                        <div class="story-product">
+                            <a href="#">
+                                <figure>
+                                    <img src="(이미지)" alt="(이미지 설명)">
+                                </figure>
+                                <div class="story-product-text">
+                                    <div class="product-name">
+                                        (제품 이름)
+                                    </div>
+                                    <div class="product-category">
+                                        (가구 종류)
+                                    </div>
+                                    <div class="pay-orginal">
+                                        <span>(가격)</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="product">(할인가)</div>
+                                        <div class="pay"><b>(할인가)</b>원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="" alt="(이름/나이)">
+                        </figure>
+                        <div class="story-txt">
+                            <div class="stars">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                            </div>
+                            <h4>김서연<i class="mdt">32세</i><i class="mdt"></i>서울</h4>
+                        </div>
+                        <div class="story-product">
+                            <a href="#">
+                                <figure>
+                                    <img src="(이미지)" alt="(이미지 설명)">
+                                </figure>
+                                <div class="story-product-text">
+                                    <div class="product-name">
+                                        (제품 이름)
+                                    </div>
+                                    <div class="product-category">
+                                        (가구 종류)
+                                    </div>
+                                    <div class="pay-orginal">
+                                        <span>(가격)</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="product">(할인가)</div>
+                                        <div class="pay"><b>(할인가)</b>원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="" alt="(이름/나이)">
+                        </figure>
+                        <div class="story-txt">
+                            <div class="stars">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                            </div>
+                            <h4>김서연<i class="mdt">32세</i><i class="mdt"></i>서울</h4>
+                        </div>
+                        <div class="story-product">
+                            <a href="#">
+                                <figure>
+                                    <img src="(이미지)" alt="(이미지 설명)">
+                                </figure>
+                                <div class="story-product-text">
+                                    <div class="product-name">
+                                        (제품 이름)
+                                    </div>
+                                    <div class="product-category">
+                                        (가구 종류)
+                                    </div>
+                                    <div class="pay-orginal">
+                                        <span>(가격)</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="product">(할인가)</div>
+                                        <div class="pay"><b>(할인가)</b>원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="" alt="(이름/나이)">
+                        </figure>
+                        <div class="story-txt">
+                            <div class="stars">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                                <img src="" alt="좋아요 별">
+                            </div>
+                            <h4>김서연<i class="mdt">32세</i><i class="mdt"></i>서울</h4>
+                        </div>
+                        <div class="story-product">
+                            <a href="#">
+                                <figure>
+                                    <img src="(이미지)" alt="(이미지 설명)">
+                                </figure>
+                                <div class="story-product-text">
+                                    <div class="product-name">
+                                        (제품 이름)
+                                    </div>
+                                    <div class="product-category">
+                                        (가구 종류)
+                                    </div>
+                                    <div class="pay-orginal">
+                                        <span>(가격)</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="product">(할인가)</div>
+                                        <div class="pay"><b>(할인가)</b>원</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
