@@ -181,7 +181,6 @@ header{
         display: block;
     }
     
-    }
     .gnb2depth-smart .common-frame{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -198,6 +197,9 @@ header{
         flex-direction: column;
         gap:1rem;
     }
+
+}
+
 @media (max-width:768px){
     .gnb2depth-smart .common-frame{
         grid-template-columns: repeat(2,1fr);

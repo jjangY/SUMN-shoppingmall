@@ -83,7 +83,6 @@
 }
 .cardlist>li>a{
     display: block;
-    border: 1px solid red;
     line-height: 0;
     overflow: hidden;
     border-radius:0.5rem;
@@ -96,8 +95,7 @@
     width: 100%;
     height: 100%;
     z-index: 10;
-    position: absolute;
-    background-color:linear-gradient(rgba(54, 43, 43 0%) #000000 50% black 100%);
+    background-color:linear-gradient(#362b2b 50%, #4C4242 50%, #2C2121 100%,);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,10 +106,112 @@
 .cover:hover{
     opacity: 0;
 }
-.cardlist>li>a img
-.cardlist>li:hover>a img{
-    transition:all 0.5s ease 0;
+.cardlist>li>a img{
+    transition: all 0.5s ease 0s;
 }
+.cardlist>li:hover>a img{
+    transform: scale(1.1);
+}
+
+.reivew-story>li>figure{
+    line-height:0;
+    border-radius:0.5rem;
+    overflow: hidden;
+    margin-bottom:1.75rem;
+}
+.story-txt{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    padding-bottom:2rem;
+    margin-bottom:2rem;
+    border-bottom:1px dotted #E7E7E7;
+}
+.story-txt h4{
+    font-weight: var(--fw2);
+}
+.story-txt h4+p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.story-product figure{
+    width:6.25rem;
+    height:55px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+/* 상단 태그에 들어가는 가구이미지는 가로세로 100px로 다시뽑기 */
+.like-badge{
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
+    font-size: var(--fs-body2);
+    display: flex;
+    align-items: center;
+}
+.story-product>a{
+    display: flex;
+    gap:1rem;
+}
+.product-name{
+    margin-bottom:.5rem;
+    color: var(--gray-800);
+    font-weight:var(--fw2);
+}
+.product-category{
+    margin-bottom:.5rem;
+    color: var(--dark-700);
+}
+.pay-orginal{
+    color: var(--gray-500);
+    font-size: var(--fs-body2);
+}
+.pay-orginal span{
+    text-decoration: line-through;
+}
+.pay-discount{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+}
+.discount{
+    font-size: var(--fs-body2);
+}
+.pay{
+    color: var(--red);
+}
+.sale{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(50px,1fr));
+    gap:3rem 1rem;
+}
+.con3{
+    padding:6rem 0;
+}
+.sale li figure{
+    line-height: 0;
+    margin-bottom: 1.75rem;
+}
+.sale li figure img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.like-badge.noab{
+    position:initial;
+}
+/* 왜 라이크 뱃지가 안뜨는거지? */
+.sale-txt{
+
+}
+
 @media (max-width:1250px){
     .banner-line .common-frame{
         justify-content: space-between;
