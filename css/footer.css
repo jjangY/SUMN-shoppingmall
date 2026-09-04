@@ -61,7 +61,6 @@ footer .common-frame{
     text-align: center;
 }
 .cstime{
-    width:390px;
     display: grid;
     grid-template-columns: repeat(2,minmax(50px,1fr));
     gap: 1rem 1rem;
@@ -77,6 +76,31 @@ footer .common-frame{
     .foot-navi{
         flex-direction: column;
         justify-content: initial;
-        gap: 28px;
+        gap: 2rem;
+    }
+    .coinfo {
+    width: auto;
+    }
+    .foot-2{
+        width: auto;
+    }
+    .sns {
+    justify-content: center;
+    }
+    .logof{
+    text-align: center;
+    }
+}
+@media (max-width:768px){
+    .footmenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1rem;
+    }
+    .coinfo {
+    grid-template-columns: repeat(2,minmax(50px,1fr));
+    }
+    .cscenter{
+    justify-content: flex-start;
     }
 }

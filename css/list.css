@@ -1,0 +1,7 @@
+.hero-banner{
+    line-height: 0;
+}
+.hero-banner img{
+    width: 100%;
+}
+/*  히어로배너 이미지는 가로세로 비율 고정한채로 가로 768px로 디자인해서 뽑기 */

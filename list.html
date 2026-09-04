@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="stylesheet" href="./css/list.css">
     <script src="./js/header.js" defer></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
@@ -695,342 +697,249 @@
 
         </div>
     </div>
+
     <main>
-        <!-- 히어로 배너 슬라이드 -->
-        <div class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/1pc.jpg" alt="당신의 일상이 머무는 공간 SUMN">
-                    <img class="pad" src="./img/1pad.jpg" alt="당신의 일상이 머무는 공간 SUMN">
-                    <img class="mo" src="./img/1mo.jpg" alt="당신의 일상이 머무는 공간 SUMN">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/2pc.jpg" alt="최대 30% 할인 상품">
-                    <img class="pad" src="./img/2pad.jpg" alt="최대 30% 할인 상품">
-                    <img class="mo" src="./img/2mo.jpg" alt="최대 30% 할인 상품">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/3pc.jpg" alt="SUMN의 새로운 컬렉션">
-                    <img class="pad" src="./img/3pad.jpg" alt="SUMN의 2026 새로운 컬렉션">
-                    <img class="mo" src="./img/3mo.jpg" alt="SUMN의 2026 새로운 컬렉션">
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
+        <div class="hero-banner">
+            <a href="">
+                <picture>
+                    <source media="(max-width:768px)" srcset="./img/banner-mo.jpg">
+                    <source media="(max-width:1024px)" srcset="./img/banner-pad.jpg">
+                    <img srcset="./img/banner-pc.jpg" alt="SUMN 쇼핑몰 신상품 배너 이미지">
+                </picture>
+            </a>
         </div>
-        <script>
-            const station = new Swiper('.hero-slider', {
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                speed: 1000
-            });
-        </script>
-
-        <div class="banner-line">
-            <div class="common-frame">
-                <span>NOTICE</span>
-                <h4>SUMN의 새로운 소식을 확인해보세요.</h4>
-                <p>새로운 Collection과 Event, 브랜드 관련 소식 만나보기</p>
-                <a href="#" class="btn-style">VIEW NOTICE <img src="./img/formkit-arrowright.svg" alt="공지사항 바로가기"></a>
-            </div>
-        </div>
-
-        <section class="con1">
-            <div class="common-frame">
-                <div class="title">
-                    <h1>Live in SUMN</h1>
-                    <spann></spann>
-                    <p>공간의 쓰임과 아름다움을 생각한 SUMN의 컬렉션을 만나보세요.</p>
-                </div>
-                <div class="swiper cardlist-wrap">
-                    <ul class="cardlist swiper-wrapper">
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">LIVING ROOM</div>
-                                <img src="./img/con1-1.jpg" alt="living room">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">DINING ROOM</div>
-                                <img src="./img/con1-2.jpg" alt="dining room">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">KITCHEN</div>
-                                <img src="./img/con1-3.jpg" alt="kitchen">
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                                <div class="cover">BEDROOM</div>
-                                <img src="./img/con1-4.jpg" alt="bedroom">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <script>
-                    const cardlist = new Swiper('.cardlist-wrap', {
-                        breakpoints: {
-                            0: {
-                                slidesPerView: 1.2,
-                                spaceBetween: 12,
-                            },
-                            340: {
-                                slidesPerView: 2.2,
-                                spaceBetween: 12,
-                            },
-                            768: {
-                                slidesPerView: 3.2,
-                                spaceBetween: 14,
-                            },
-                            1024: {
-                                slidesPerView: 4,
-                                spaceBetween: 16,
-                            }
-                        },
-                        autoplay: {
-                            delay: 3000
-                        }
-                    });
-                </script>
-            </div>
-        </section>
-
-        <section class="con2">
-            <div class="common-frame">
-                <div class="title">
-                    <h1>집에 머무는 이유, SUMN</h1>
-                </div>
-                <div class="swiper review-story-wrap">
-                    <ul class="reivew-story swiper-wrapper">
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/con2-1.jpg" alt="김서연 서울 32세 스토리 섬네일">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>김서연<i class="mdt">32세</i><i class="mdt"></i>서울</h4>
-                                <p>집을 꾸밀 때 가장 중요하게 생각했던 건 오래 봐도 질리지 않는 편안한 분위기였어요. 그래서 거실 가구를 고를 때도 디자인이 너무 화려하거나 유행을 타는
-                                    제품보다는 공간에 자연스럽게 녹아드는 제품을 찾고 있었어요.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge"><img src="./img/likes-1.svg" alt="좋아요하트">87</span>
-                                        <img src="./img/con2-1-1.jpg" alt="MORI 3-SEATER SOFA">
-                                    </figure>
-                                    <div class="story-product-text">
-                                        <div class="product-name">
-                                            MORI 3-SEATER SOFA
-                                        </div>
-                                        <div class="product-category">
-                                            거실
-                                        </div>
-                                        <div class="pay-orginal">
-                                            <span>100,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount">30%</div>
-                                            <div class="pay"><b>70,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/con2-2.jpg" alt="이도현 성남 35세 스토리 섬네일">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>이도현<i class="mdt"></i>35세<i class="mdt"></i>성남</h4>
-                                <p>주방과 다이닝 공간을 함께 사용하는 시간이 많아지면서 식탁을 제대로 골라보고 싶다는 생각이 들었어요. 기존에는 작은 테이블을 사용했는데 식사를 할 때마다
-                                    공간이 좁게 느껴지고, 손님이 왔을 때도 불편해서 이번에 조금 넉넉한 사이즈로 바꾸게 됐습니다.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge"><img src="./img/likes-1.svg" alt="좋아요하트">87</span>
-                                        <img src="./img/con2-2-2.jpg" alt="LUNE OAK DINING TABLE">
-                                    </figure>
-                                    <div class="story-product-text">
-                                        <div class="product-name">
-                                            LUNE OAK DINING TABLE
-                                        </div>
-                                        <div class="product-category">
-                                            다이닝
-                                        </div>
-                                        <div class="pay-orginal">
-                                            <span>100,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount">30%</div>
-                                            <div class="pay"><b>70,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/con2-3.jpg" alt="박지은 부산 29세 스토리 섬네일">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>박지은<i class="mdt"></i>29세<i class="mdt"></i>부산</h4>
-                                <p>침실은 집에서 가장 편안해야 하는 공간이라고 생각해서 가구를 고를 때도 최대한 단순하고 차분한 디자인을 선호하는 편이에요. 이전에 사용하던 침대는
-                                    수납이나 기능이 많았지만 오히려 침실이 복잡해 보이는 느낌이 있어서 이번에는 정말 기본에 충실한 제품을 찾았습니다.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge"><img src="./img/likes-1.svg" alt="좋아요하트">87</span>
-                                        <img src="./img/con3-3.jpg" alt="NEST LOW BED">
-                                    </figure>
-                                    <div class="story-product-text">
-                                        <div class="product-name">
-                                            NEST LOW BED
-                                        </div>
-                                        <div class="product-category">
-                                            침실
-                                        </div>
-                                        <div class="pay-orginal">
-                                            <span>100,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount">30%</div>
-                                            <div class="pay"><b>70,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure>
-                                <img src="./img/con2-4.jpg" alt="최민아 대전 33세 스토리 섬네일">
-                            </figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                    <img src="./img/star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>최민아<i class="mdt"></i>33세<i class="mdt"></i>대전</h4>
-                                <p>매일 사용하는 공간이라 더 신중하게 골랐는데, 주방에 들어올 때마다 기분이 좋아져요. 수납과 동선이 편해진 것은 물론이고, 아일랜드 주변에 자연스럽게
-                                    사람들이 모이게 되면서 집에서 보내는 시간이 더 즐거워졌어요.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge"><img src="./img/likes-1.svg" alt="좋아요하트">87</span>
-                                        <img src="./img/con4-4.jpg" alt="NORA KITCHEN ISLAND">
-                                    </figure>
-                                    <div class="story-product-text">
-                                        <div class="product-name">
-                                            NORA KITCHEN ISLAND
-                                        </div>
-                                        <div class="product-category">
-                                            주방
-                                        </div>
-                                        <div class="pay-orginal">
-                                            <span>100,000</span>원
-                                        </div>
-                                        <div class="pay-discount">
-                                            <div class="discount">30%</div>
-                                            <div class="pay"><b>70,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <script>
-                    const reviewStory = new Swiper('.review-story-wrap', {
-                        breakpoints: {
-                            0: {
-                                slidesPerView: 1.2,
-                                spaceBetween: 12,
-                            },
-                            340: {
-                                slidesPerView: 2.2,
-                                spaceBetween: 12,
-                            },
-                            768: {
-                                slidesPerView: 3.2,
-                                spaceBetween: 14,
-                            },
-                            1024: {
-                                slidesPerView: 4,
-                                spaceBetween: 16,
-                            }
-                        },
-                    })
-                </script>
-            </div>
-        </section>
-
-        <section class="con3">
-            <div class="common-frame">
-                <div class="title">
-                    <h1>SUMN SPECIAL</h1>
-                    <spann></spann>
-                    <p>일상을 채우는 가구, 특별한 가격으로 만나보세요.</p>
-                </div>
-                <ul class="sale grid-list">
-                    <li>
-                        <a href="#">
-                            <figure><img src="./img/s-wrap-1.jpg" alt="특가상품1">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">NOVA 다이닝 테이블</h4>
-                                <p class="desc-1">자연스러운 우드 텍스처로 부드러운
-                                    따뜻한 분위기를 완성하는 다이닝 테이블</p>
-                                <div class="pay-frame">
-                                    <div class="pay-orginal">
-                                        <span>100,000</span>원
-                                    </div>
-                                    <div class="pay-discount">
-                                        <div class="discount">30%</div>
-                                        <div class="pay"><b>70,000</b>원</div>
-                                    </div>
-                                </div>
-                                <span class="like-badge noab"><img src="./img/likes-1.svg" alt="좋아요하트">87</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
     </main>
+
+    <section class="con1">
+        <div class="common-frame">
+            <div class="title">
+                <h1>NEW ARRIVAL</h1>
+                <spann></spann>
+                <p>일상에 자연스럽게 스며드는 SUMN만의 감각적인 가구</p>
+            </div>
+        </div>
+    </section>
+
+    <ul class="new-product grid-list">
+        <li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li><li>
+            <a href="#">
+                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
+                </figure>
+                <div class="sale-txt">
+                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
+                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
+                    <div class="pay-frame">
+                        <div class="pay-orginal">
+                            <span>890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">30%</div>
+                            <div class="pay"><b>70,000</b>원</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
 
     <!-- 푸터 -->
     <footer>
