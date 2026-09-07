@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
 
-    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/product.css">
     <script src="./js/header.js" defer></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
@@ -19,7 +19,6 @@
 
     <!-- 제품 정보 -->>
     <script src="./js/new-product.js"></script>
-    <script src="./js/product-control-new.js" defer></script>
 </head>
 
 <body>
@@ -699,49 +698,124 @@
     </div>
 
     <main>
-        <div class="hero-banner">
-            <a href="">
-                <picture>
-                    <source media="(max-width:768px)" srcset="./img/banner-mo.jpg">
-                    <source media="(max-width:1024px)" srcset="./img/banner-pad.jpg">
-                    <img srcset="./img/banner-pc.jpg" alt="SUMN 쇼핑몰 신상품 배너 이미지">
-                </picture>
-            </a>
-        </div>
-    </main>
-
-    <section class="con1">
-        <div class="common-frame">
-            <div class="title">
-                <h1>NEW ARRIVAL</h1>
-                <spann></spann>
-                <p>일상에 자연스럽게 스며드는 SUMN만의 감각적인 가구</p>
-            </div>
-        </div>
-    </section>
-
-    <ul class="new-product grid-list">
-        <li>
-            <a href="#">
-                <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파">
-                </figure>
-                <div class="sale-txt">
-                    <h4 class="title-1">루나 부클레 3인용 소파</h4>
-                    <p class="desc-1">포근한 부클레 패브릭과 부드러운 곡선 디자인으로 아늑한 거실 분위기를 완성해 주는 미니멀 소파</p>
-                    <div class="pay-frame">
-                        <div class="pay-orginal">
-                            <span>890,000</span>원
-                        </div>
-                        <div class="pay-discount">
-                            <div class="discount">30%</div>
-                            <div class="pay"><b>70,000</b>원</div>
+        <section class="info-product">
+            <div class="common-frame">
+                <div class="product-img">
+                    <figure class="thumbnail-big">
+                        <figure><img src="./img/n1-big.jpg" alt="루나 부클레 3인용 소파"></figure>
+                    </figure>
+                    <div class="horizontal-scroll-gallery">
+                        <div class="train-horizontal">
+                            <figure><img src="./img/n1.jpg" alt="루나 부클레 3인용 소파 1번 사진"></figure>
+                            <figure><img src="./img/n2.jpg" alt="루나 부클레 3인용 소파 2번 사진"></figure>
+                            <figure><img src="./img/n3.jpg" alt="루나 부클레 3인용 소파 3번 사진"></figure>
+                            <figure><img src="./img/n4.jpg" alt="루나 부클레 3인용 소파 4번 사진"></figure>
+                            <figure><img src="./img/n5.jpg" alt="루나 부클레 3인용 소파 5번 사진"></figure>
                         </div>
                     </div>
                 </div>
-            </a>
-        </li>
-    </ul>
-    <!-- 메인태그 안에넣어주세요.. -->
+                <div class="product-txt">
+                    <div class="product-name">
+                        <sapn class="category-badge">NEW</sapn>
+                        <div class="product-title">
+                            [SUMN] 모먼트 스틸 수납장 3단 서랍장 1200(아이보리)
+                        </div>
+                        <div class="pay-frame">
+                            <div class="pay-orginal">
+                                <span>689,000</span>원
+                            </div>
+                            <div class="pay-discount">
+                                <div class="discount">32%</div>
+                                <div class="pay"><b>469,000</b>원</div>
+                            </div>
+                            <dl class="benefit">
+                                <dt>회원혜택</dt>
+                                <dd>
+                                    <ul class="benefit-list">
+                                        <li>
+                                            <span>상품할인</span>
+                                            <div class="price-benefit">
+                                                <span>
+                                                    <p>469,000</p>원<i>5%</i>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>장바구니 할인</span>
+                                            <div class="price-benefit">
+                                                <span>
+                                                    <p>440,860</p>원<i>6%</i>
+                                                </span>
+                                                <p>주문서 작성 시 가격 적용됩니다.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd>
+                                    <a href="#" class="btn-coupon">전체 쿠폰 받기
+                                        <img src="./img/material-symbols-light_download.svg" alt="쿠폰 받기">
+                                    </a>
+                                </dd>
+
+                                <dt>추가혜택</dt>
+                                <dd>
+                                    <ul class="benefit-list">
+                                        <li>
+                                            <span>무이자 할부</span>
+                                            <div class="desc-benefit">
+                                                할부금 월73,167원(최대 6개월)
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>카드</span>
+                                            <div class="desc-benefit">
+                                                삼성카드 132,000원(10,000원 즉시 할인)
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd>
+                                    <a href="#" class="btn-link">더보기</a>
+                                </dd>
+
+                                <dt>포인트</dt>
+                                <dd>
+                                    <ul class="benefit-list">
+                                        <li>
+                                            <span>SUMN Point</span>
+                                            <div class="desc-benefit">
+                                                469P(0.1%) 적립 예정
+                                                <p>SUMN 맴버스 회원 시 적립 가능합니다.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd>
+                                    <a href="#" class="btn-link">더보기</a>
+                                </dd>
+
+                                <dt>배송정보</dt>
+                                <dd>
+                                    <p class="delivery-info">무료(전국)/내맘대로 배송지정, 오직 SUMN에서만</p>
+                                </dd>
+                                <dd>
+                                    <a href="#" class="btn-link">자세히보기</a>
+                                </dd>
+                            </dl>
+                            <div class="pay-info">
+                                총 합계금액 <b>967,500</b>원
+                                <p class="tip-info">회원 혜택가는 로그인 후, 주문서 작성시 적용 가능합니다.</p>
+                            </div>
+                            <div class="buttons">
+                                <a href="#" class="btn-cart">장바구니</a>
+                                <a href="#" class="btn-buy">구매하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- 푸터 -->
     <footer>
         <div class="common-frame">
