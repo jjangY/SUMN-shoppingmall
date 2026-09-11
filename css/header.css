@@ -74,7 +74,7 @@ header{
 .gnb{
     display: flex;
     gap: var(--space-nomal);
-    height: 50px;
+    height: 70px;
     font-weight: var(--fw2);
 }
 .gnb>li>a{

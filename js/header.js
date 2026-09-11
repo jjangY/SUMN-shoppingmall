@@ -1,6 +1,6 @@
 const btnMenu = document.querySelector('.btn-menu');
 const smartOverlayMenu = document.querySelector('.smart-overlay-menu');
-const btnMenuClose = document.querySelector('.smart-menu-close');
+const btnMenuClose = document.querySelector('.btn-menu-close');
 
 // 스마트 디바이스 메뉴 열기 닫기 기능
 if(btnMenu){
