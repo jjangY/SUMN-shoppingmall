@@ -77,6 +77,8 @@ footer .common-frame{
         flex-direction: column;
         justify-content: initial;
         gap: 2rem;
+        align-items: center;
+    }
     }
     .coinfo {
     width: auto;
@@ -90,7 +92,7 @@ footer .common-frame{
     .logof{
     text-align: center;
     }
-}
+    
 @media (max-width:768px){
     .footmenu {
     display: grid;

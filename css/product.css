@@ -158,3 +158,34 @@
     color: #000;
     background-color: var(--dark-500);
 }
+
+
+@media(max-width:1024px){
+    .benefit {
+    grid-template-columns: 90px 1fr 110px;
+    }
+    .benefit-list li {
+    grid-template-columns: 90px 1fr;
+    }
+    .train-horizontal figure {
+    height: 6rem;
+    }
+}
+@media(max-width:900px){
+    .info-product .common-frame {
+    flex-direction: column;
+    }
+    .product-img {
+    width: auto;
+    }
+    /* 프로덕트 이미지 언스플래쉬아닌 사진으로 바꿔주기 */
+    .product-txt {
+    padding-left: 0;
+    }
+}
+@media(max-width:768px){}
+@media(max-width:500px){
+    .benefit {
+    grid-template-columns: initial;
+    }
+}
