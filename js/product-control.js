@@ -17,7 +17,7 @@ let result = productArray.map(product => {
                                 <div class="pay"><b>${formatMoney(product.price * (1-product.pdiscount))}</b>원</div>
                             </div>
                         </div>
-                        <span class="like-badge noab"><img src="./img/likes-1.svg" alt="좋아요하트">${product.plikes}</span>
+                        <span class="like-badge noab"><img src="./img/likes-1.svg" alt="좋아요하트">${product.plike}</span>
                     </div>
                 </a>
             </li>`

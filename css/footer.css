@@ -51,7 +51,7 @@ footer .common-frame{
 .brand-decs{
     line-height: var(--lh2);
 }
-.cscenter{
+.cscenter {
     display: flex;
     justify-content: center;
 }
@@ -102,7 +102,7 @@ footer .common-frame{
     .coinfo {
     grid-template-columns: repeat(2,minmax(50px,1fr));
     }
-    .cscenter{
-    justify-content: flex-start;
+    .cscenter {
+    justify-content: center;
     }
 }

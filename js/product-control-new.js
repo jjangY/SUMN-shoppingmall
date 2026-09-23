@@ -1,7 +1,7 @@
 const saleUlTag = document.querySelector('.new-product');
 let result = newProductArray.map(product => {
     return `<li>
-                <a href="#">
+                <a href="./product.html?pid=${product.pid}">
                     <figure>
                         <img src="./img/${product.pthumbFileName}" alt="${product.pname}">
                     </figure>
@@ -14,14 +14,14 @@ let result = newProductArray.map(product => {
                             </div>
                             <div class="pay-discount">
                                 <div class="discount">${Math.round(product.pdiscount*100)}%</div>                                
-                                <div class="pay"><b>${formatMoney(Math.round(product.price * (1-product.pdiscount)))}</b>원</div>
+                                <div class="pay"><b>${formatMoney(Math.round(product.price *(1-product.pdiscount)))}</b>원</div>
                             </div>`:`<div class="pay"><b>${formatMoney(product.price)}</b>원</div>`}
+                            
                         </div>
                     </div>
                 </a>
             </li>`
 }).join('')
-
 
 saleUlTag.innerHTML = result
 
