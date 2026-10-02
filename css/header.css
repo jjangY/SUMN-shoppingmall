@@ -1,9 +1,13 @@
-header{
+header {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
+    transition: all 1s ease 0s;
+}
+header.on{
+    transform: translateY(-104px);
 }
 .smart-overlay-menu{display: none;}
 .header-top{
@@ -71,10 +75,10 @@ header{
     background-color: var(--dark-0);
     position: relative;
 }
-.gnb{
+.gnb {
     display: flex;
     gap: var(--space-normal);
-    height: 70px;
+    height: 50px;
     font-weight: var(--fw2);
 }
 .gnb>li>a{
